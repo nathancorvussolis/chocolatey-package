@@ -12,13 +12,13 @@
 Supported OS
 
 * Windows Vista / Server 2008
-  * Service Pack 2
-  * Platform Update (KB971644 or KB971512)
+    * Service Pack 2
+    * Platform Update (KB971644 or KB971512)
 * Windows 7 / Server 2008 R2
-  * Service Pack 1
+    * Service Pack 1
 * Windows 8 / Server 2012
-* Windows 8.1 /Server 2012 R2
-  * S14 Update (KB2919355)
+* Windows 8.1 / Server 2012 R2
+    * S14 Update (KB2919355)
 * Windows 10
 </description>
     <projectUrl>https://nathancorvussolis.github.io/</projectUrl>

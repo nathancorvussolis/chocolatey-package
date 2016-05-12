@@ -4,7 +4,7 @@ $url = 'https://github.com/nathancorvussolis/corvusskk/releases/download/2.3.4/c
 $silentArgs = '/quiet /norestart'
 $validExitCodes= @(0, 3010)
 
-$osVersion = (Get-WmiObject Win32_OperatingSystem).Version
+$osVersion = [version](Get-WmiObject Win32_OperatingSystem).Version
 
 if(($osVersion -eq [version]"6.0.6000") -or ($osVersion -eq [version]"6.0.6001")) {
   Write-Warning "$packageName requires Service Pack 2 on Windows Vista / Server 2008."
@@ -14,7 +14,7 @@ if(($osVersion -eq [version]"6.0.6000") -or ($osVersion -eq [version]"6.0.6001")
 if($osVersion -eq [version]"6.0.6002") {
   $hotfix971512 = Get-HotFix | where hotfixID -eq KB971512
   $hotfix971644 = Get-HotFix | where hotfixID -eq KB971644
-  if(($hotfix971512 -eq $null) -AND ($hotfix971644 -eq $null)) {
+  if(($hotfix971512 -eq $null) -and ($hotfix971644 -eq $null)) {
     Write-Warning "$packageName requires KB971512 or KB971644 on Windows Vista / Server 2008."
     return
   }
