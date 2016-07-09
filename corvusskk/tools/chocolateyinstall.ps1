@@ -1,6 +1,6 @@
 ﻿$packageName = 'CorvusSKK'
 $installerType = 'exe'
-$url = 'https://github.com/nathancorvussolis/corvusskk/releases/download/2.4.2/corvusskk-2.4.2.exe'
+$url = 'https://github.com/nathancorvussolis/corvusskk/releases/download/2.4.3/corvusskk-2.4.3.exe'
 $silentArgs = '/quiet /norestart'
 $validExitCodes= @(0, 3010)
 
