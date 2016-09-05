@@ -1,6 +1,8 @@
 ﻿$packageName = 'CorvusSKK'
 $installerType = 'exe'
 $url = 'https://github.com/nathancorvussolis/corvusskk/releases/download/2.4.5/corvusskk-2.4.5.exe'
+$checksum = 'AF3FD1A7C743C35AA9661F873CD67A8DF197076FBF8B0810822F92B1F26D1725'
+$checksumType = 'sha256'
 $silentArgs = '/quiet /norestart'
 $validExitCodes= @(0, 3010)
 
@@ -36,6 +38,8 @@ if($osVersion -eq [version]"6.3.9600") {
 Install-ChocolateyPackage -PackageName "$packageName" `
                           -FileType "$installerType" `
                           -Url "$url" `
+                          -Checksum "$checksum" `
+                          -ChecksumType "$checksumType" `
                           -SilentArgs "$silentArgs" `
                           -ValidExitCodes $validExitCodes
 
