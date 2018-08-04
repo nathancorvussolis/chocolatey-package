@@ -1,7 +1,7 @@
 ﻿$packageName = 'CorvusSKK'
 $installerType = 'exe'
-$url = 'https://github.com/nathancorvussolis/corvusskk/releases/download/2.6.1/corvusskk-2.6.1.exe'
-$checksum = '815D60B6B1221E77988AFAFC11D6958860475B39A9EB52C1BADAAE2F7C278E1C'
+$url = 'https://github.com/nathancorvussolis/corvusskk/releases/download/2.7.0/corvusskk-2.7.0.exe'
+$checksum = 'BE1A05623232C24E6607B5178A510638689D21BDE504261340D06B5E032FEEA4'
 $checksumType = 'sha256'
 $silentArgs = '/quiet /norestart'
 $validExitCodes= @(0, 3010)
