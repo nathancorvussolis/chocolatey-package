@@ -3,7 +3,7 @@
   <metadata>
     <id>corvusskk</id>
     <title>CorvusSKK</title>
-    <version>2.7.12</version>
+    <version>2.8.0</version>
     <authors>SASAKI Nobuyuki</authors>
     <owners>nathancorvussolis</owners>
     <summary>SKK-like Japanese Input Method Editor</summary>
@@ -20,13 +20,13 @@ Supported OS
     <projectUrl>https://nathancorvussolis.github.io/</projectUrl>
     <packageSourceUrl>https://github.com/nathancorvussolis/chocolatey-package/tree/master/corvusskk</packageSourceUrl>
     <projectSourceUrl>https://github.com/nathancorvussolis/corvusskk</projectSourceUrl>
-    <docsUrl>https://github.com/nathancorvussolis/corvusskk/blob/2.7.12/README.md</docsUrl>
+    <docsUrl>https://github.com/nathancorvussolis/corvusskk/blob/2.8.0/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/nathancorvussolis/corvusskk/issues</bugTrackerUrl>
     <tags>Japanese Input IME SKK admin</tags>
-    <licenseUrl>https://cdn.rawgit.com/nathancorvussolis/corvusskk/2.7.12/LICENSE.TXT</licenseUrl>
+    <licenseUrl>https://cdn.rawgit.com/nathancorvussolis/corvusskk/2.8.0/LICENSE.TXT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/nathancorvussolis/chocolatey-package/master/corvusskk/app.png</iconUrl>
-    <releaseNotes>https://github.com/nathancorvussolis/corvusskk/releases/tag/2.7.12</releaseNotes>
+    <releaseNotes>https://github.com/nathancorvussolis/corvusskk/releases/tag/2.8.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
