@@ -1,26 +1,12 @@
 ﻿$packageName = 'CorvusSKK'
 $installerType = 'exe'
-$url = 'https://github.com/nathancorvussolis/corvusskk/releases/download/3.1.5/corvusskk-3.1.5.exe'
-$checksum = '1e4309bcd979dc036afd9e89462e1fd3b5759aac45df2b65bc77f0c762e285db'
+$url = 'https://github.com/nathancorvussolis/corvusskk/releases/download/3.2.0/corvusskk-3.2.0.exe'
+$checksum = 'e7cb3957a72e7e558061550bf2a5ae6ca7d1760d37fd804dc36a937fbfe07bc2'
 $checksumType = 'sha256'
 $silentArgs = '/quiet /norestart'
 $validExitCodes= @(0, 3010)
 
 $osVersion = [version](Get-WmiObject Win32_OperatingSystem).Version
-
-if(($osVersion -eq [version]"6.0.6000") -or ($osVersion -eq [version]"6.0.6001")) {
-  Write-Warning "$packageName requires Service Pack 2 on Windows Vista / Server 2008."
-  return
-}
-
-if($osVersion -eq [version]"6.0.6002") {
-  $hotfix971512 = Get-HotFix | where hotfixID -eq KB971512
-  $hotfix971644 = Get-HotFix | where hotfixID -eq KB971644
-  if(($hotfix971512 -eq $null) -and ($hotfix971644 -eq $null)) {
-    Write-Warning "$packageName requires KB971512 or KB971644 on Windows Vista / Server 2008."
-    return
-  }
-}
 
 if($osVersion -eq [version]"6.1.7600") {
   Write-Warning "$packageName requires Service Pack 1 on Windows 7 / Server 2008 R2."
