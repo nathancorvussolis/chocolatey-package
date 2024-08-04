@@ -3,7 +3,7 @@
   <metadata>
     <id>corvusskk</id>
     <title>CorvusSKK</title>
-    <version>3.2.3</version>
+    <version>3.3.0</version>
     <authors>SASAKI Nobuyuki</authors>
     <owners>nathancorvussolis</owners>
     <summary>SKK-like Japanese Input Method Editor</summary>
@@ -11,21 +11,19 @@
 
 Supported OS
 
-* Windows 7 SP1
-* Windows 8.1 (with KB2919355)
-* Windows 10
+* Windows 10 (version 1607 build 14393 or later)
 * Windows 11
 </description>
     <projectUrl>https://nathancorvussolis.github.io/</projectUrl>
     <packageSourceUrl>https://github.com/nathancorvussolis/chocolatey-package/tree/master/corvusskk</packageSourceUrl>
     <projectSourceUrl>https://github.com/nathancorvussolis/corvusskk</projectSourceUrl>
-    <docsUrl>https://github.com/nathancorvussolis/corvusskk/blob/3.2.3/README.md</docsUrl>
+    <docsUrl>https://github.com/nathancorvussolis/corvusskk/blob/3.3.0/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/nathancorvussolis/corvusskk/issues</bugTrackerUrl>
     <tags>Japanese Input IME SKK admin</tags>
-    <licenseUrl>https://github.com/nathancorvussolis/corvusskk/raw/3.2.3/LICENSE.TXT</licenseUrl>
+    <licenseUrl>https://github.com/nathancorvussolis/corvusskk/raw/3.3.0/LICENSE.TXT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/nathancorvussolis/chocolatey-package/master/corvusskk/app.png</iconUrl>
-    <releaseNotes>https://github.com/nathancorvussolis/corvusskk/releases/tag/3.2.3</releaseNotes>
+    <releaseNotes>https://github.com/nathancorvussolis/corvusskk/releases/tag/3.3.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
