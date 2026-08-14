@@ -1,7 +1,7 @@
 ﻿$packageName = 'CorvusSKK'
 $softwareName = 'CorvusSKK*'
 $installerType = 'exe'
-$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
+$silentArgs = '/LOG /VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
 $validExitCodes = @(0)
 
 [array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
@@ -13,7 +13,7 @@ if ($key.Count -eq 1) {
       -FileType $installerType `
       -SilentArgs "$silentArgs" `
       -ValidExitCodes $validExitCodes `
-      -File "$($_.UninstallString)"
+      -File "$($_.UninstallString.Replace('/LOG', '').Trim())"
   }
   Write-Warning "$packageName requires to restart Windows for complete uninstallation."
 } elseif ($key.Count -eq 0) {
