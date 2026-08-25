@@ -22,7 +22,7 @@ Supported OS
     <tags>Japanese Input IME SKK admin</tags>
     <licenseUrl>https://github.com/nathancorvussolis/corvusskk/raw/3.3.4/LICENSE.TXT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/nathancorvussolis/chocolatey-package/master/corvusskk/app.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/nathancorvussolis/chocolatey-package/corvusskk/app.png</iconUrl>
     <releaseNotes>https://github.com/nathancorvussolis/corvusskk/releases/tag/3.3.4</releaseNotes>
   </metadata>
   <files>
